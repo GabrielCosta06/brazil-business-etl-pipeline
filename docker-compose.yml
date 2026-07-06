@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: brazil_business_postgres
+    environment:
+      POSTGRES_DB: brazil_business
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+
+volumes:
+  postgres_data:

@@ -1,0 +1,4 @@
+series_name,series_code,description,frequency
+selic_daily,11,Selic daily interest rate,daily
+usd_brl_daily,1,"USD/BRL exchange rate, selling price",daily
+ipca_monthly,433,IPCA monthly inflation rate,monthly
